@@ -12,11 +12,12 @@ user_name:      '{{ "vagrant" if target == "virtualbox" else app_name }}'
 group_name:     '{{ user_name }}'
 user_home_path: '/home/{{ user_name }}'
 
-postgresql_db_name: site_development
-postgresql_db_user: root
-postgresql_db_password:
+postgresql_db_name:     site_development
+postgresql_db_user:     vagrant
+postgresql_db_password: vagrant
 postgresql_extensions:
   - hstore
+  - postgis
 
 app_path: '{{ path if target == "virtualbox" else "{{ path }}/current" }}'
 app_public_path: "{{ app_path }}/public"
