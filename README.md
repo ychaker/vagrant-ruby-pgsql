@@ -66,15 +66,15 @@ vagrant up --provision
 ### Package & Add Vagrant Box
 
 ```
-vagrant package --output pkg/[name-of-box]
-vagrant box add --name [name-of-box] pkg/[name-of-box]
+vagrant package --output pkg/[name-of-box].box
+vagrant box add --name [name-of-box] pkg/[name-of-box].box
 ```
 
 **Example:**
 
 ```
-vagrant package --output pkg/python-node
-vagrant box add --name python-node pkg/python-node
+vagrant package --output pkg/python-node.box
+vagrant box add --name python-node pkg/python-node.box
 ```
 
 ### Double check
